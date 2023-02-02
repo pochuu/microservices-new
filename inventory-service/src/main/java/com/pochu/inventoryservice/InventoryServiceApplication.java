@@ -1,11 +1,15 @@
 package com.pochu.inventoryservice;
 
+import com.netflix.discovery.EurekaClient;
 import com.pochu.inventoryservice.model.Inventory;
 import com.pochu.inventoryservice.repository.InventoryRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Lazy;
 
 @SpringBootApplication
 public class InventoryServiceApplication {
